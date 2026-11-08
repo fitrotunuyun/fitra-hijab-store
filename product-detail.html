@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Produk — Fitra Hijab Store</title>
+  <title>Detail Produk — Fitra Hijab</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,42 +15,65 @@
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Beranda</a></li>
-        <li><a href="products.html" class="nav-link">Semua Produk</a></li>
-        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="products.html" class="nav-link">Semua Jilbab</a></li>
+        <li><a href="about.html" class="
+" class="nav-link">Tentang</a></li>
         <li><a href="contact.html" class="nav-link">Kontak</a></li>
         <li><a href="cart.html" class="nav-link cart-icon">
           <i class="fas fa-shopping-bag"></i>
-          <span id="cart-count" class="count-badge">0</span>
+          <span class="count-badge" id="cart-count">0</span>
         </a></li>
       </ul>
-      <div class="hamburger"><span></span><span></span><span></span></div>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </nav>
 
-  <section class="detail-section">
-    <div class="detail-container">
-      <div class="detail-img">
-        <img id="prod-img" src="" alt="">
-      </div>
-      <div class="detail-info">
-        <h1 id="prod-name"></h1>
-        <p class="price" id="prod-price"></p>
-        <p class="desc" id="prod-desc"></p>
+  <section class="detail-container">
+    <div class="detail-img">
+      <img id="prod-img" src="" alt="">
+    </div>
+    <div class="detail-info">
+      <h1 id="prod-name"></h1>
+      <p class="detail-price" id="prod-price"></p>
+      <p class="detail-desc" id="prod-desc"></p>
+
+      <div class="detail-spec">
         <h3>Spesifikasi</h3>
-        <ul id="prod-spec" class="spec-list"></ul>
-        
+        <ul id="prod-spec"></ul>
+      </div>
+
+      <!-- PILIHAN UKURAN -->
+      <div class="opsi-group">
+        <h3>Pilih Ukuran</h3>
+        <div class="opsi-wrapper" id="opsi-ukuran"></div>
+      </div>
+
+      <!-- PILIHAN WARNA -->
+      <div class="opsi-group">
+        <h3>Pilih Warna</h3>
+        <div class="opsi-wrapper" id="opsi-warna"></div>
+      </div>
+
+      <!-- JUMLAH -->
+      <div class="qty-wrapper">
+        <label>Jumlah:</label>
         <div class="qty-box">
-          <label>Jumlah:</label>
           <button class="qty-btn" onclick="ubahJumlah(-1)">−</button>
           <input type="number" id="qty" value="1" min="1">
-          <button class="qty-btn" onclick="ubahJumlah(+1)">+</button>
+          <button class="qty-btn" onclick="ubahJumlah(1)">+</button>
         </div>
-        
-        <button id="btn-add-cart" class="btn btn-primary btn-lg btn-full">
-          <i class="fas fa-shopping-bag"></i> Masukkan Keranjang
-        </button>
-        <a href="products.html" class="btn btn-outline btn-full">← Kembali ke Koleksi</a>
       </div>
+
+      <!-- TOMBOL KERANJANG -->
+      <button id="btn-add-cart" class="btn btn-primary btn-full btn-lg">
+        <i class="fas fa-shopping-bag"></i> Tambah ke Keranjang
+      </button>
+
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--abu);">
+        <i class="fas fa-truck"></i> Gratis ongkir belanja di atas Rp 150.000
+      </p>
     </div>
   </section>
 
@@ -58,13 +81,13 @@
     <div class="footer-grid">
       <div>
         <img src="logo-fitra.png" alt="Fitra Hijab" class="footer-logo">
-        <p>Koleksi hijab berkualitas, anggun & terpercaya.</p>
+        <p>Koleksi jilbab cantik, berkualitas, dan terpercaya.</p>
       </div>
       <div>
-        <h4>Tautan Cepat</h4>
+        <h4>Tautan</h4>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="products.html">Semua Produk</a></li>
+          <li><a href="products.html">Semua Jilbab</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html">Hubungi Kami</a></li>
         </ul>
@@ -72,7 +95,6 @@
       <div>
         <h4>Kontak</h4>
         <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
-        <p><i class="fas fa-envelope"></i> fitrahijab@email.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
         <div class="sosmed">
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -81,7 +103,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Fitra Hijab Store. Semua Hak Dilindungi.</p>
+    <p class="copyright">&copy; 2026 Fitra Hijab — Semua Hak Dilindungi</p>
   </footer>
 
   <script src="script.js"></script>
