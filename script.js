@@ -7,51 +7,52 @@ const DAFTAR_PRODUK = [
     id: 1,
     nama: 'Hijab Syari Premium',
     harga: 65000,
-    gambar: 'https://images.unsplash.com/photo-1593030760247-85d313165c40?w=400&q=80',
-    deskripsi: 'Terbuat dari bahan Ceruty Babydoll berkualitas tinggi...',
+    gambar: 'https://cdn.pixabay.com/photo/2016/03/27/08/44/woman-1282514_1280.jpg',
+    deskripsi: 'Terbuat dari bahan Ceruty Babydoll berkualitas tinggi. Lembut, adem, tidak panas meski dipakai seharian.',
     spesifikasi: ['Bahan: Ceruty Babydoll', 'Ukuran: 110cm x 140cm', 'Warna: 12 pilihan']
   },
   {
     id: 2,
     nama: 'Pashmina Ceruty',
     harga: 45000,
-    gambar: 'https://images.unsplash.com/photo-1583391631042-4a4935ebf0f4?w=400&q=80',
-    deskripsi: 'Pashmina bahan ceruty yang sangat populer...',
+    gambar: 'https://cdn.pixabay.com/photo/2017/06/27/02/48/woman-2443578_1280.jpg',
+    deskripsi: 'Pashmina bahan ceruty yang sangat populer. Mudah dibentuk, jatuh cantik.',
     spesifikasi: ['Bahan: Ceruty', 'Ukuran: 75cm x 180cm']
   },
   {
     id: 3,
     nama: 'Khimar Syari Set',
     harga: 96000,
-    gambar: 'https://images.unsplash.com/photo-1609058356391-0e6e631b4785?w=400&q=80',
-    deskripsi: 'Paket lengkap khimar + rok seragam...',
+    gambar: 'https://cdn.pixabay.com/photo/2021/01/19/12/36/woman-5928418_1280.jpg',
+    deskripsi: 'Paket lengkap khimar + rok seragam. Praktis & anggun langsung pakai.',
     spesifikasi: ['Isi: Khimar + Rok', 'Bahan: Katun Premium']
   },
   {
     id: 4,
     nama: 'Bergo Sporty',
     harga: 38000,
-    gambar: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
-    deskripsi: 'Model instan yang praktis banget!',
+    gambar: 'https://cdn.pixabay.com/photo/2018/03/09/17/57/woman-3211719_1280.jpg',
+    deskripsi: 'Model instan yang praktis banget! Langsung pakai, tidak perlu diatur.',
     spesifikasi: ['Bahan: Jersey Premium', 'Model: Instan']
   },
   {
     id: 5,
     nama: 'Segi Empat Paris',
     harga: 32000,
-    gambar: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80',
-    deskripsi: 'Kain paris kualitas bagus...',
+    gambar: 'https://cdn.pixabay.com/photo/2019/07/11/08/47/woman-4329662_1280.jpg',
+    deskripsi: 'Kain paris kualitas bagus. Lembut, jatuh cantik, warnanya tahan lama.',
     spesifikasi: ['Bahan: Kain Paris', 'Ukuran: 110cm x 110cm']
   },
   {
     id: 6,
     nama: 'Gamis Busui Ramah',
     harga: 145000,
-    gambar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&q=80',
-    deskripsi: 'Gamis cantik & nyaman untuk ibu menyusui...',
+    gambar: 'https://cdn.pixabay.com/photo/2020/05/29/09/38/woman-5232018_1280.jpg',
+    deskripsi: 'Gamis cantik & nyaman untuk ibu menyusui. Ada resleting depan.',
     spesifikasi: ['Bahan: Katun Toyobo', 'Fitur: Resleting depan']
   }
 ];
+
 
 
 
