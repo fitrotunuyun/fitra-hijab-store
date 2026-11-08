@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami — TokoSaya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">TokoSaya</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="products.html" class="nav-link">Produk</a></li>
+        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+        <li><a href="cart.html" class="nav-link cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="count-badge">0</span>
+        </a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Hubungi Kami</h1>
+    <p>Siap membantu Anda kapan saja</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Informasi Kontak</h2>
+        <div class="info-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>halo@tokosaya.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Alamat</h3>
+            <p>Jl. Contoh No. 123, Semarang, Jawa Tengah</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Jam Operasional</h3>
+            <p>Senin–Jumat: 08.00 – 21.00 WIB<br>Sabtu–Minggu: 09.00 – 18.00 WIB</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Kirim Pesan</h2>
+        <form onsubmit="kirimPesan(event)">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" required>
+          </div>
+          <div class="form-group">
+            <label>Nomor WhatsApp / Email</label>
+            <input type="text" id="kontak" required>
+          </div>
+          <div class="form-group">
+            <label>Pesan Anda</label>
+            <textarea id="pesan" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h3>TokoSaya</h3><p>Belanja mudah, aman, dan nyaman.</p></div>
+      <div>
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> halo@tokosaya.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TokoSaya. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
