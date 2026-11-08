@@ -33,7 +33,7 @@ const DAFTAR_PRODUK = [
     deskripsi: 'KERUDUNG SEGI EMPAT PARIS POLOS VARISHA NECI 2 SISI. Berbahan dasar katun paris dengan tekstur halus dan lembut sehingga nyaman digunakan sehari-hari. Permukaannya yang sedikit mengkilap membuat hijab terlihat lebih menarik .',
     ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Tua', 'Mocca', 'Maroon', 'Ivory', 'Navy', 'Putih'],
-    spesifikasi: ['Bahan: 'Katun Paris', 'Ukuran: 110-110cm'],
+    spesifikasi: ['Bahan: Katun Paris', 'Ukuran: 110-110cm'],
     label: 'Diskon'
   },
   {
