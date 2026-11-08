@@ -20,6 +20,70 @@
           <i class="fas fa-shopping-cart"></i>
           <span id="cart-count" class="count-badge">0</span>
         </a></li>
-      </ul>
-      <div class="hamburger"><span></span><span></span><
+            </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Keranjang Belanja</h1>
+    <p>Tinjau pesanan Anda sebelum dikirim</p>
+  </section>
+
+  <section class="cart-section">
+    <div class="cart-container">
+      <div id="cart-items" class="cart-list"></div>
+      <div id="cart-empty" class="cart-empty">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Keranjang masih kosong</p>
+        <a href="products.html" class="btn btn-primary">Belanja Sekarang</a>
+      </div>
+      
+      <div id="cart-summary" class="cart-summary">
+        <h3>Ringkasan Pesanan</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">Rp 0</span>
+        </div>
+        <div class="summary-row">
+          <span>Ongkos Kirim</span>
+          <span id="shipping">Rp 0</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="grand-total">Rp 0</span>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="kirimKeWA()">
+          <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+        </button>
+        <button class="btn btn-outline btn-full" onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h3>TokoSaya</h3><p>Belanja mudah, aman, dan nyaman.</p></div>
+      <div>
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> halo@tokosaya.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TokoSaya. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
