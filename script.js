@@ -34,7 +34,7 @@ const DAFTAR_PRODUK = [
     ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Tua', 'Mocca', 'Maroon', 'Ivory', 'Navy', 'Putih'],
     spesifikasi: ['Bahan: Katun Paris', 'Ukuran: 110-110cm'],
-    label: 'Diskon'
+    label: 'Terlaris'
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const DAFTAR_PRODUK = [
     ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Putih', 'Dusty Pink', 'Biru Langit', 'Coklat Susu'],
     spesifikasi: ['Bahan: Viscose Premium', 'Ukuran: 180cm x 75cm', 'Tepi Jahit Rapi'],
-    label: 'Terlaris'
+    label: 'Diskon'
   },
   {
     id: 5,
