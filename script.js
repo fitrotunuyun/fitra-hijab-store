@@ -238,3 +238,36 @@ function tampilkanDetailProduk() {
 function ubahJumlah(selisih) {
   const input = document.getElementById('qty');
   if (!input) return
+    let nilai = parseInt(input.value) + selisih;
+  if (nilai < 1) nilai = 1;
+  input.value = nilai;
+}
+
+// === HALAMAN KONTAK ===
+function kirimPesan(e) {
+  e.preventDefault();
+  const nama = document.getElementById('nama')?.value || '';
+  const kontak = document.getElementById('kontak')?.value || '';
+  const pesan = document.getElementById('pesan')?.value || '';
+  
+  const teks = `Assalamu'alaikum kak Fitra Hijab 🤍\nSaya ${nama}\nKontak: ${kontak}\n\nPesan:\n${pesan}`;
+  const url = `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(teks)}`;
+  window.open(url, '_blank');
+  e.target.reset();
+  alert('✅ Pesan dikirim! Terima kasih sudah menghubungi Fitra Hijab 🤍');
+}
+
+// === MENU HP ===
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+if (hamburger && navMenu) {
+  hamburger.onclick = () => navMenu.classList.toggle('aktif');
+}
+
+// === JALANKAN SAAT BUKA ===
+window.onload = () => {
+  tampilkanJumlah();
+  if (document.getElementById('cart-items')) tampilkanKeranjang();
+  if (document.getElementById('prod-name')) tampilkanDetailProduk();
+};
+
