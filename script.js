@@ -1,54 +1,55 @@
 // === KONFIGURASI ===
-const KUNCI_KERANJANG = 'toko_saya_keranjang';
-const NOMOR_WA = '6281234567890'; // Ganti nomor WA kamu
+const KUNCI_KERANJANG = 'fitra_hijab_keranjang';
+const NOMOR_WA = '+62882005944577'; // GANTI PAKAI NOMOR WA KAMU!
+
 const DAFTAR_PRODUK = [
   {
     id: 1,
-    nama: 'Produk A — Kualitas Premium',
-    harga: 50000,
-    gambar: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300',
-    deskripsi: 'Bahan berkualitas tinggi, awet dipakai lama. Pilihan tepat untuk kebutuhan sehari-hari atau hadiah spesial.',
-    spesifikasi: ['Bahan: Premium', 'Warna: Hitam', 'Garansi: 1 Tahun']
+    nama: 'Hijab Syari Premium',
+    harga: 65000,
+    gambar: 'https://images.unsplash.com/photo-1593030760247-85d313165c40?w=300',
+    deskripsi: 'Terbuat dari bahan Ceruty Babydoll berkualitas tinggi. Lembut, adem, tidak panas meski dipakai seharian. Ukuran lebar, menutup dada dengan sempurna. Jahitan rapi & kuat.',
+    spesifikasi: ['Bahan: Ceruty Babydoll', 'Ukuran: 110cm x 140cm', 'Warna: 12 pilihan', 'Perawatan: Cuci tangan, jemur di tempat teduh']
   },
   {
     id: 2,
-    nama: 'Produk B — Desain Elegan',
-    harga: 75000,
-    gambar: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300',
-    deskripsi: 'Tampilan cantik & modern, cocok dipakai ke acara santai maupun resmi. Nyaman dipakai seharian.',
-    spesifikasi: ['Bahan: Sintetis berkualitas', 'Warna: Merah', 'Ukuran: Standar']
+    nama: 'Pashmina Ceruty',
+    harga: 45000,
+    gambar: 'https://images.unsplash.com/photo-1583391631042-4a4935ebf0f4?w=300',
+    deskripsi: 'Pashmina bahan ceruty yang sangat populer. Mudah dibentuk, jatuh cantik, tidak mudah kusut. Jahitan tepi rapi & halus.',
+    spesifikasi: ['Bahan: Ceruty', 'Ukuran: 75cm x 180cm', 'Cocok untuk: Sehari-hari & acara resmi', 'Panjang cukup untuk gaya simpel maupun detail']
   },
   {
     id: 3,
-    nama: 'Produk C — Pilihan Terbaik',
-    harga: 120000,
-    gambar: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300',
-    deskripsi: 'Paling laris! Fitur lengkap, kualitas terjamin, disukai ratusan pelanggan kami.',
-    spesifikasi: ['Bahan: Campuran premium', 'Warna: Cokelat', 'Stok: Terbatas']
+    nama: 'Khimar Syari Set',
+    harga: 96000,
+    gambar: 'https://images.unsplash.com/photo-1609058356391-0e6e631b4785?w=300',
+    deskripsi: 'Paket lengkap khimar + rok seragam. Praktis & anggun langsung pakai. Bahan adem, nyaman dipakai beraktivitas.',
+    spesifikasi: ['Isi: Khimar + Rok', 'Bahan: Katun Premium', 'Harga Normal: Rp 120.000', 'Diskon 20% berlaku sekarang']
   },
   {
     id: 4,
-    nama: 'Produk D — Spesial Edisi',
-    harga: 95000,
-    gambar: 'https://images.unsplash.com/photo-1560343090-f0409e92791a?w=300',
-    deskripsi: 'Edisi terbatas! Desain eksklusif, stok sedikit. Dapatkan sebelum kehabisan.',
-    spesifikasi: ['Edisi: Terbatas', 'Warna: Putih', 'Tersedia: 20 unit']
+    nama: 'Bergo Sporty',
+    harga: 38000,
+    gambar: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300',
+    deskripsi: 'Model instan yang praktis banget! Langsung pakai, tidak perlu diatur. Bahan lembut & adem, cocok ke kampus, pasar, atau jalan-jalan.',
+    spesifikasi: ['Bahan: Jersey Premium', 'Model: Instan', 'Tidak mudah melorot', 'Cuci pakai mesin aman']
   },
   {
     id: 5,
-    nama: 'Produk E — Fitur Lengkap',
-    harga: 85000,
-    gambar: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300',
-    deskripsi: 'Banyak keunggulan dengan harga tetap ramah. Praktis, awet, dan bergaya.',
-    spesifikasi: ['Fitur: Lengkap', 'Koneksi: Universal', 'Garansi: 6 Bulan']
+    nama: 'Segi Empat Paris',
+    harga: 32000,
+    gambar: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=300',
+    deskripsi: 'Kain paris kualitas bagus. Lembut, jatuh cantik, warnanya tahan lama. Tersedia banyak pilihan warna kekinian.',
+    spesifikasi: ['Bahan: Kain Paris', 'Ukuran: 110cm x 110cm', 'Warna: 15 pilihan', 'Tekstur halus & adem']
   },
   {
     id: 6,
-    nama: 'Produk F — Paling Populer',
-    harga: 65000,
-    gambar: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300',
-    deskripsi: 'Favorit pelanggan! Sudah dinilai bintang 5 oleh banyak pembeli. Terbukti memuaskan.',
-    spesifikasi: ['Bahan: Lembut & kuat', 'Warna: Hitam elegan', 'Ulasan: ⭐⭐⭐⭐⭐']
+    nama: 'Gamis Busui Ramah',
+    harga: 145000,
+    gambar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=300',
+    deskripsi: 'Gamis cantik & nyaman untuk ibu menyusui. Ada resleting depan, bahan adem, tidak ketat. Bisa untuk pengajian, kondangan, atau sehari-hari.',
+    spesifikasi: ['Bahan: Katun Toyobo', 'Fitur: Resleting depan (busui friendly)', 'Tersedia: Ukuran M, L, XL', 'Jahitan rapi & kuat']
   }
 ];
 
@@ -167,7 +168,7 @@ function tampilkanKeranjang() {
   const elTotal = document.getElementById('grand-total');
   
   if (elSub) elSub.textContent = `Rp ${subtotal.toLocaleString()}`;
-  if (elOngkir) elOngkir.textContent = ongkir === 0 ? 'Gratis!' : `Rp ${ongkir.toLocaleString()}`;
+  if (elOngkir) elOngkir.textContent = ongkir === 0 ? 'GRATIS!' : `Rp ${ongkir.toLocaleString()}`;
   if (elTotal) elTotal.textContent = `Rp ${totalAkhir.toLocaleString()}`;
 }
 
@@ -175,7 +176,7 @@ function kirimKeWA() {
   const keranjang = ambilKeranjang();
   if (keranjang.length === 0) return alert('Keranjang masih kosong!');
   
-  let pesan = 'Halo! Saya mau pesan:\n\n';
+  let pesan = 'Assalamu\'alaikum kak Fitra Hijab 🤍\nSaya mau pesan:\n\n';
   let subtotal = 0;
   
   keranjang.forEach(b => {
@@ -189,18 +190,15 @@ function kirimKeWA() {
   
   pesan += `\n────────────────────\n`;
   pesan += `Subtotal: Rp ${subtotal.toLocaleString()}\n`;
-  pesan += `Ongkos kirim: ${ongkir === 0 ? 'GRATIS' : 'Rp ' + ongkir.toLocaleString()}\n`;
+  pesan += `Ongkos kirim: ${ongkir === 0 ? 'GRATIS (min. belanja Rp 150.000)' : 'Rp ' + ongkir.toLocaleString()}\n`;
   pesan += `TOTAL: Rp ${totalAkhir.toLocaleString()}\n\n`;
-  pesan += `Mohon info ketersediaan & alamat pengiriman ya. Terima kasih!`;
+  pesan += `Mohon info ketersediaan, alamat pengiriman, & cara pembayarannya ya kak. Terima kasih! 🤍`;
   
   const url = `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(pesan)}`;
   window.open(url, '_blank');
 }
 
 // === HALAMAN DETAIL PRODUK ===
-let produkTerpilih = null;
-let jumlahBeli = 1;
-
 function ambilIdDariUrl() {
   const params = new URLSearchParams(window.location.search);
   return parseInt(params.get('id'));
@@ -210,8 +208,8 @@ function tampilkanDetailProduk() {
   const id = ambilIdDariUrl();
   if (!id) return;
   
-  produkTerpilih = DAFTAR_PRODUK.find(p => p.id === id);
-  if (!produkTerpilih) return;
+  const produk = DAFTAR_PRODUK.find(p => p.id === id);
+  if (!produk) return;
   
   const img = document.getElementById('prod-img');
   const nama = document.getElementById('prod-name');
@@ -220,73 +218,23 @@ function tampilkanDetailProduk() {
   const spec = document.getElementById('prod-spec');
   const btn = document.getElementById('btn-add-cart');
   
-  if (img) img.src = produkTerpilih.gambar;
-  if (img) img.alt = produkTerpilih.nama;
-  if (nama) nama.textContent = produkTerpilih.nama;
-  if (harga) harga.textContent = `Rp ${produkTerpilih.harga.toLocaleString()}`;
-  if (desc) desc.textContent = produkTerpilih.deskripsi;
+  if (img) { img.src = produk.gambar; img.alt = produk.nama; }
+  if (nama) nama.textContent = produk.nama;
+  if (harga) harga.textContent = `Rp ${produk.harga.toLocaleString()}`;
+  if (desc) desc.textContent = produk.deskripsi;
   
   if (spec) {
     spec.innerHTML = '';
-    produkTerpilih.spesifikasi.forEach(s => {
+    produk.spesifikasi.forEach(s => {
       spec.innerHTML += `<li>✅ ${s}</li>`;
     });
   }
   
   if (btn) {
-    btn.onclick = () => {
-      tambahKeKeranjang(
-        produkTerpilih.id,
-        produkTerpilih.nama,
-        produkTerpilih.harga
-      );
-    };
+    btn.onclick = () => tambahKeKeranjang(produk.id, produk.nama, produk.harga);
   }
 }
 
 function ubahJumlah(selisih) {
   const input = document.getElementById('qty');
-  if (!input) return;
-  
-  let nilai = parseInt(input.value) + selisih;
-  if (nilai < 1) nilai = 1;
-  input.value = nilai;
-  jumlahBeli = nilai;
-}
-
-// === HALAMAN KONTAK ===
-function kirimPesan(e) {
-  e.preventDefault();
-  const nama = document.getElementById('nama')?.value || '';
-  const kontak = document.getElementById('kontak')?.value || '';
-  const pesan = document.getElementById('pesan')?.value || '';
-  
-  const teks = `Halo, saya ${nama}.\nKontak saya: ${kontak}\n\nPesan:\n${pesan}`;
-  const url = `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(teks)}`;
-  window.open(url, '_blank');
-  e.target.reset();
-  alert('✅ Pesan dikirim! Terima kasih.');
-}
-
-// === MENU HP ===
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-if (hamburger && navMenu) {
-  hamburger.onclick = () => {
-    navMenu.classList.toggle('aktif');
-  };
-}
-
-// === JALANKAN SAAT HALAMAN DIBUKA ===
-window.onload = () => {
-  tampilkanJumlah();
-  
-  if (document.getElementById('cart-items')) {
-    tampilkanKeranjang();
-  }
-  
-  if (document.getElementById('prod-name')) {
-    tampilkanDetailProduk();
-  }
-};
-
+  if (!input) return
