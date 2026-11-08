@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semua Koleksi — Fitra Hijab Store</title>
+  <title>Semua Koleksi — Fitra Hijab</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,104 +15,42 @@
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Beranda</a></li>
-        <li><a href="products.html" class="nav-link active">Semua Produk</a></li>
+        <li><a href="products.html" class="nav-link active">Semua Jilbab</a></li>
         <li><a href="about.html" class="nav-link">Tentang</a></li>
         <li><a href="contact.html" class="nav-link">Kontak</a></li>
         <li><a href="cart.html" class="nav-link cart-icon">
           <i class="fas fa-shopping-bag"></i>
-          <span id="cart-count" class="count-badge">0</span>
+          <span class="count-badge" id="cart-count">0</span>
         </a></li>
       </ul>
-      <div class="hamburger"><span></span><span></span><span></span></div>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </nav>
 
-  <section class="page-header">
-    <h1>Semua Koleksi Hijab</h1>
+  <div class="page-header">
+    <h1>Semua Koleksi Jilbab</h1>
     <p>Pilihan lengkap untuk penampilan anggun & berkelas</p>
-  </section>
+  </div>
 
   <section class="products-section">
-    <div class="products-grid">
-      <div class="product-card">
-        <span class="badge laris">Terlaris</span>
-        <img src="https://cdn.pixabay.com/photo/2016/03/27/08/44/woman-1282514_1280.jpg" alt="Hijab Syari">
-        <h3>Hijab Syari Premium</h3>
-        <p class="desc">Bahan Ceruty Babydoll, lebar & sangat nyaman.</p>
-        <p class="price">Rp 65.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=1" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(1, 'Hijab Syari Premium', 65000)">+ Keranjang</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="badge baru">Baru</span>
-        <img src="https://cdn.pixabay.com/photo/2017/06/27/02/48/woman-2443578_1280.jpg" alt="Pashmina">
-        <h3>Pashmina Ceruty</h3>
-        <p class="desc">Jahitan tepi rapi, mudah dibentuk & dipakai.</p>
-        <p class="price">Rp 45.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=2" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(2, 'Pashmina Ceruty', 45000)">+ Keranjang</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="badge diskon">-20%</span>
-        <img src="https://cdn.pixabay.com/photo/2021/01/19/12/36/woman-5928418_1280.jpg" alt="Khimar">
-        <h3>Khimar Syari Set</h3>
-        <p class="desc">Khimar + Rok, praktis, anggun & lengkap.</p>
-        <p class="price"><del>Rp 120.000</del> Rp 96.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=3" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(3, 'Khimar Syari Set', 96000)">+ Keranjang</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2018/03/09/17/57/woman-3211719_1280.jpg" alt="Bergo">
-        <h3>Bergo Sporty</h3>
-        <p class="desc">Bahan adem, cocok untuk sehari-hari & aktivitas.</p>
-        <p class="price">Rp 38.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=4" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(4, 'Bergo Sporty', 38000)">+ Keranjang</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="badge baru">Baru</span>
-        <img src="https://cdn.pixabay.com/photo/2019/07/11/08/47/woman-4329662_1280.jpg" alt="Segi Empat">
-        <h3>Segi Empat Paris</h3>
-        <p class="desc">Kain paris premium, jatuh cantik, banyak warna.</p>
-        <p class="price">Rp 32.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=5" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(5, 'Segi Empat Paris', 32000)">+ Keranjang</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="badge laris">Terlaris</span>
-<img src="https://cdn.pixabay.com/photo/2020/05/29/09/38/woman-5232018_1280.jpg" alt="Gamis">
-        <h3>Gamis Busui Ramah</h3>
-        <p class="desc">Bahan lembut, resleting depan, nyaman dipakai.</p>
-        <p class="price">Rp 145.000</p>
-        <div class="btn-group">
-          <a href="product-detail.html?id=6" class="btn btn-sm">Detail</a>
-          <button class="btn btn-primary btn-sm" onclick="addToCart(6, 'Gamis Busui Ramah', 145000)">+ Keranjang</button>
-        </div>
-      </div>
+    <div class="products-grid" id="daftar-produk">
+      <!-- Isi otomatis dari script.js -->
     </div>
   </section>
 
   <footer class="footer">
     <div class="footer-grid">
       <div>
-        <img src="logo-fitra.png" alt="Fitra Hijab" class="footer-logo">
-        <p>Koleksi hijab berkualitas, anggun & terpercaya.</p>
+        <img src="logofitra.png" alt="Fitra Hijab" class="footer-logo">
+        <p>Koleksi jilbab cantik, berkualitas, dan terpercaya.</p>
       </div>
       <div>
-        <h4>Tautan Cepat</h4>
+        <h4>Tautan</h4>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="products.html">Semua Produk</a></li>
+          <li><a href="products.html">Semua Jilbab</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html">Hubungi Kami</a></li>
         </ul>
@@ -120,7 +58,6 @@
       <div>
         <h4>Kontak</h4>
         <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
-        <p><i class="fas fa-envelope"></i> fitrahijab@email.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
         <div class="sosmed">
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -129,7 +66,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Fitra Hijab Store. Semua Hak Dilindungi.</p>
+    <p class="copyright">&copy; 2026 Fitra Hijab — Semua Hak Dilindungi</p>
   </footer>
 
   <script src="script.js"></script>
