@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keranjang Belanja — Fitra Hijab Store</title>
+  <title>Keranjang — Fitra Hijab</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,55 +15,59 @@
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Beranda</a></li>
-        <li><a href="products.html" class="nav-link">Semua Produk</a></li>
+        <li><a href="products.html" class="nav-link">Semua Jilbab</a></li>
         <li><a href="about.html" class="nav-link">Tentang</a></li>
         <li><a href="contact.html" class="nav-link">Kontak</a></li>
-        <li><a href="cart.html" class="nav-link active cart-icon">
+        <li><a href="cart.html" class="nav-link cart-icon">
           <i class="fas fa-shopping-bag"></i>
-          <span id="cart-count" class="count-badge">0</span>
+          <span class="count-badge" id="cart-count">0</span>
         </a></li>
       </ul>
-      <div class="hamburger"><span></span><span></span><span></span></div>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </nav>
 
-  <section class="page-header">
+  <div class="page-header">
     <h1>Keranjang Belanja</h1>
-    <p>Tinjau pesanan Anda sebelum dikirim 🤍</p>
-  </section>
+    <p>Pesanan kamu siap dikirim 🤍</p>
+  </div>
 
-  <section class="cart-section">
-    <div class="cart-container">
-      <div id="cart-items" class="cart-list"></div>
-      
-      <div id="cart-empty" class="cart-empty">
-        <i class="fas fa-shopping-bag"></i>
-        <p>Keranjang Anda masih kosong</p>
-        <a href="products.html" class="btn btn-primary">Mulai Belanja</a>
+  <section class="cart-container">
+    <!-- KOSONG -->
+    <div class="cart-empty" id="cart-empty">
+      <i class="fas fa-shopping-bag"></i>
+      <h3>Keranjang Masih Kosong</h3>
+      <p>Yuk pilih jilbab favoritmu sekarang!</p>
+      <a href="products.html" class="btn btn-primary" style="margin-top: 1rem;">Lihat Koleksi</a>
+    </div>
+
+    <!-- ISI KERANJANG -->
+    <div id="cart-items"></div>
+
+    <!-- RINGKASAN -->
+    <div class="cart-summary" id="cart-summary" style="display: none;">
+      <h3>Ringkasan Pesanan</h3>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">Rp 0</span>
       </div>
-      
-      <div id="cart-summary" class="cart-summary">
-        <h3>Ringkasan Pesanan</h3>
-        <div class="summary-row">
-          <span>Subtotal</span>
-          <span id="subtotal">Rp 0</span>
-        </div>
-        <div class="summary-row">
-          <span>Ongkos Kirim</span>
-          <span id="shipping">Rp 0</span>
-        </div>
-        <div class="summary-row total">
-          <span>Total</span>
-          <span id="grand-total">Rp 0</span>
-        </div>
-        <p style="font-size: 0.9rem; color: var(--abu); margin: 0.5rem 0;">Gratis ongkir untuk belanja di atas Rp 150.000 🎁</p>
-        <button class="btn btn-primary btn-full" onclick="kirimKeWA()">
+      <div class="summary-row">
+        <span>Ongkos Kirim</span>
+        <span id="shipping">Rp 0</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total</span>
+        <span id="grand-total">Rp 0</span>
+      </div>
+      <p style="margin: 1rem 0; font-size: 0.9rem; color: var(--abu);">
+        Belanja ≥ Rp 150.000 = <span class="free-shipping">Gratis Ongkir!</span>
+      </p>
+      <div class="btn-group" style="margin-top: 1.5rem;">
+        <button class="btn btn-outline" onclick="kosongkanKeranjang()">Kosongkan</button>
+        <button class="btn btn-primary" onclick="kirimKeWA()">
           <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
-        <button class="btn btn-primary btn-full" onclick="kirimKeWA()">
-          <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
-        </button>
-        <button class="btn btn-outline btn-full" onclick="kosongkanKeranjang()">
-          Kosongkan Keranjang
         </button>
       </div>
     </div>
@@ -73,13 +77,13 @@
     <div class="footer-grid">
       <div>
         <img src="logo-fitra.png" alt="Fitra Hijab" class="footer-logo">
-        <p>Koleksi hijab berkualitas, anggun & terpercaya.</p>
+        <p>Koleksi jilbab cantik, berkualitas, dan terpercaya.</p>
       </div>
       <div>
-        <h4>Tautan Cepat</h4>
+        <h4>Tautan</h4>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="products.html">Semua Produk</a></li>
+          <li><a href="products.html">Semua Jilbab</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html">Hubungi Kami</a></li>
         </ul>
@@ -87,7 +91,6 @@
       <div>
         <h4>Kontak</h4>
         <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
-        <p><i class="fas fa-envelope"></i> fitrahijab@email.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
         <div class="sosmed">
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -96,7 +99,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Fitra Hijab Store. Semua Hak Dilindungi.</p>
+    <p class="copyright">&copy; 2026 Fitra Hijab — Semua Hak Dilindungi</p>
   </footer>
 
   <script src="script.js"></script>
