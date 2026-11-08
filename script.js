@@ -7,7 +7,7 @@ const DAFTAR_PRODUK = [
     id: 1,
     nama: 'Jilbab Bergo Instan',
     harga: 65000,
-    gambar: 'instan-bergo.png',
+    gambar: "instan-bergo.png",
     deskripsi: 'Jilbab instan bahan rayon premium. Lembut, adem, tidak panas dipakai seharian. Langsung pakai tanpa perlu diatur.',
     ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Susu', 'Dusty Pink', 'Mocca', 'Putih'],
