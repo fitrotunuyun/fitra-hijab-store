@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hubungi Kami — TokoSaya</title>
+  <title>Hubungi Kami — Fitra Hijab Store</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">TokoSaya</a>
+      <a href="index.html" class="logo">
+        <img src="logofitra.png" alt="Fitra Hijab" class="logo-img">
+      </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Beranda</a></li>
-        <li><a href="products.html" class="nav-link">Produk</a></li>
+        <li><a href="products.html" class="nav-link">Semua Produk</a></li>
         <li><a href="about.html" class="nav-link">Tentang</a></li>
         <li><a href="contact.html" class="nav-link active">Kontak</a></li>
         <li><a href="cart.html" class="nav-link cart-icon">
-          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-bag"></i>
           <span id="cart-count" class="count-badge">0</span>
         </a></li>
       </ul>
@@ -27,7 +29,7 @@
 
   <section class="page-header">
     <h1>Hubungi Kami</h1>
-    <p>Siap membantu Anda kapan saja</p>
+    <p>Siap melayani Anda dengan sepenuh hati 🤍</p>
   </section>
 
   <section class="contact-section">
@@ -45,21 +47,21 @@
           <i class="fas fa-envelope"></i>
           <div>
             <h3>Email</h3>
-            <p>halo@tokosaya.com</p>
+            <p>fitrahijab@email.com</p>
           </div>
         </div>
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
           <div>
             <h3>Alamat</h3>
-            <p>Jl. Contoh No. 123, Semarang, Jawa Tengah</p>
+            <p>Semarang, Jawa Tengah</p>
           </div>
         </div>
         <div class="info-item">
           <i class="fas fa-clock"></i>
           <div>
             <h3>Jam Operasional</h3>
-            <p>Senin–Jumat: 08.00 – 21.00 WIB<br>Sabtu–Minggu: 09.00 – 18.00 WIB</p>
+            <p>Senin–Sabtu: 08.00 – 21.00 WIB<br>Minggu: 09.00 – 17.00 WIB</p>
           </div>
         </div>
       </div>
@@ -69,17 +71,17 @@
         <form onsubmit="kirimPesan(event)">
           <div class="form-group">
             <label>Nama Lengkap</label>
-            <input type="text" id="nama" required>
+            <input type="text" id="nama" required placeholder="Contoh: Siti Aisyah">
           </div>
           <div class="form-group">
-            <label>Nomor WhatsApp / Email</label>
-            <input type="text" id="kontak" required>
+            <label>Nomor WhatsApp</label>
+            <input type="text" id="kontak" required placeholder="Contoh: 0812xxxxxxx">
           </div>
           <div class="form-group">
             <label>Pesan Anda</label>
-            <textarea id="pesan" rows="5" required></textarea>
+            <textarea id="pesan" rows="5" required placeholder="Tulis pesan, pertanyaan, atau saran Anda..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          <button type="submit" class="btn btn-primary btn-full">Kirim via WhatsApp</button>
         </form>
       </div>
     </div>
@@ -87,12 +89,15 @@
 
   <footer class="footer">
     <div class="footer-grid">
-      <div><h3>TokoSaya</h3><p>Belanja mudah, aman, dan nyaman.</p></div>
+      <div>
+        <img src="logo-fitra.png" alt="Fitra Hijab" class="footer-logo">
+        <p>Koleksi hijab berkualitas, anggun & terpercaya.</p>
+      </div>
       <div>
         <h4>Tautan Cepat</h4>
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="products.html">Produk</a></li>
+          <li><a href="products.html">Semua Produk</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html">Hubungi Kami</a></li>
         </ul>
@@ -100,14 +105,18 @@
       <div>
         <h4>Kontak</h4>
         <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
-        <p><i class="fas fa-envelope"></i> halo@tokosaya.com</p>
+        <p><i class="fas fa-envelope"></i> fitrahijab@email.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
+        <div class="sosmed">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 TokoSaya. Semua Hak Dilindungi.</p>
+    <p class="copyright">&copy; 2026 Fitra Hijab Store. Semua Hak Dilindungi.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
