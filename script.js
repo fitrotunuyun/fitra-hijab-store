@@ -7,51 +7,52 @@ const DAFTAR_PRODUK = [
     id: 1,
     nama: 'Hijab Syari Premium',
     harga: 65000,
-    gambar: 'https://images.unsplash.com/photo-1593030760247-85d313165c40?w=300',
-    deskripsi: 'Terbuat dari bahan Ceruty Babydoll berkualitas tinggi. Lembut, adem, tidak panas meski dipakai seharian. Ukuran lebar, menutup dada dengan sempurna. Jahitan rapi & kuat.',
-    spesifikasi: ['Bahan: Ceruty Babydoll', 'Ukuran: 110cm x 140cm', 'Warna: 12 pilihan', 'Perawatan: Cuci tangan, jemur di tempat teduh']
+    gambar: 'https://images.unsplash.com/photo-1585479678800-81c2a0c60796?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Terbuat dari bahan Ceruty Babydoll berkualitas tinggi...',
+    spesifikasi: ['Bahan: Ceruty Babydoll', 'Ukuran: 110cm x 140cm', 'Warna: 12 pilihan']
   },
   {
     id: 2,
     nama: 'Pashmina Ceruty',
     harga: 45000,
-    gambar: 'https://images.unsplash.com/photo-1583391631042-4a4935ebf0f4?w=300',
-    deskripsi: 'Pashmina bahan ceruty yang sangat populer. Mudah dibentuk, jatuh cantik, tidak mudah kusut. Jahitan tepi rapi & halus.',
-    spesifikasi: ['Bahan: Ceruty', 'Ukuran: 75cm x 180cm', 'Cocok untuk: Sehari-hari & acara resmi', 'Panjang cukup untuk gaya simpel maupun detail']
+    gambar: 'https://images.unsplash.com/photo-1593030760247-85d313165c40?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Pashmina bahan ceruty yang sangat populer...',
+    spesifikasi: ['Bahan: Ceruty', 'Ukuran: 75cm x 180cm']
   },
   {
     id: 3,
     nama: 'Khimar Syari Set',
     harga: 96000,
-    gambar: 'https://images.unsplash.com/photo-1609058356391-0e6e631b4785?w=300',
-    deskripsi: 'Paket lengkap khimar + rok seragam. Praktis & anggun langsung pakai. Bahan adem, nyaman dipakai beraktivitas.',
-    spesifikasi: ['Isi: Khimar + Rok', 'Bahan: Katun Premium', 'Harga Normal: Rp 120.000', 'Diskon 20% berlaku sekarang']
+    gambar: 'https://images.unsplash.com/photo-1609058356391-0e6e631b4785?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Paket lengkap khimar + rok seragam...',
+    spesifikasi: ['Isi: Khimar + Rok', 'Bahan: Katun Premium']
   },
   {
     id: 4,
     nama: 'Bergo Sporty',
     harga: 38000,
-    gambar: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300',
-    deskripsi: 'Model instan yang praktis banget! Langsung pakai, tidak perlu diatur. Bahan lembut & adem, cocok ke kampus, pasar, atau jalan-jalan.',
-    spesifikasi: ['Bahan: Jersey Premium', 'Model: Instan', 'Tidak mudah melorot', 'Cuci pakai mesin aman']
+    gambar: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Model instan yang praktis banget!',
+    spesifikasi: ['Bahan: Jersey Premium', 'Model: Instan']
   },
   {
     id: 5,
     nama: 'Segi Empat Paris',
     harga: 32000,
-    gambar: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=300',
-    deskripsi: 'Kain paris kualitas bagus. Lembut, jatuh cantik, warnanya tahan lama. Tersedia banyak pilihan warna kekinian.',
-    spesifikasi: ['Bahan: Kain Paris', 'Ukuran: 110cm x 110cm', 'Warna: 15 pilihan', 'Tekstur halus & adem']
+    gambar: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Kain paris kualitas bagus...',
+    spesifikasi: ['Bahan: Kain Paris', 'Ukuran: 110cm x 110cm']
   },
   {
     id: 6,
     nama: 'Gamis Busui Ramah',
     harga: 145000,
-    gambar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=300',
-    deskripsi: 'Gamis cantik & nyaman untuk ibu menyusui. Ada resleting depan, bahan adem, tidak ketat. Bisa untuk pengajian, kondangan, atau sehari-hari.',
-    spesifikasi: ['Bahan: Katun Toyobo', 'Fitur: Resleting depan (busui friendly)', 'Tersedia: Ukuran M, L, XL', 'Jahitan rapi & kuat']
+    gambar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80',
+    deskripsi: 'Gamis cantik & nyaman untuk ibu menyusui...',
+    spesifikasi: ['Bahan: Katun Toyobo', 'Fitur: Resleting depan']
   }
 ];
+
 
 // === FUNGSI KERANJANG ===
 function ambilKeranjang() {
