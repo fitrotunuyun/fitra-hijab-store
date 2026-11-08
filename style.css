@@ -108,3 +108,120 @@ section { padding: 3rem 1rem; max-width: 1200px; margin: 0 auto; }
 .cart-item { display: flex; align-items: center; justify-content: space-between; background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; box-shadow: var(--bayangan); flex-wrap: wrap; gap: 1rem; }
 .cart-item .info { flex: 1; min-width: 150px; }
 .cart-item .info h4 { color: var(--utama); margin-bottom:
+
+  /* Footer */
+.footer {
+  background: #5D2E0C;
+  color: white;
+  padding: 3rem 1rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.footer p {
+  color: #E5D4C0;
+  line-height: 1.7;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  color: #FFFAF5;
+  font-size: 1.1rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer ul li a {
+  color: #E5D4C0;
+  transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+  color: #D2B48C;
+}
+
+.sosmed {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sosmed a {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s;
+}
+
+.sosmed a:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #B8A898;
+  font-size: 0.9rem;
+}
+
+/* Tambahan agar menu HP berfungsi */
+.nav-menu.aktif {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .detail-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container,
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
