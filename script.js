@@ -39,7 +39,7 @@ const DAFTAR_PRODUK = [
   {
     id: 4,
     nama: 'Pashmina Viscose Motif Premium',
-    harga: 40000,
+    harga: 50000,
     gambar: "printed.png",
     deskripsi: 'Hadir dengan motif watercolor yang lembut namun memikat, pashmina ini terbuat dari material katun viscose pilihan yang dikenal ringan, adem, dan nyaman dipakai seharian. Ukurannya 180x75 cm memberi keleluasaan dalam berbagai gaya, sementara detail jahit babyseam menambah kesan rapi dan eksklusif. Tampil dalam warna-warna vibrant yang dirancang khusus untuk memberikan efek elegan dan berkelas di setiap penampilanmu—baik untuk tampilan formal maupun kasual.',
     ukuran: ['S', 'M', 'L'],
