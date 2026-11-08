@@ -69,3 +69,100 @@ img { max-width: 100%; height: auto; display: block; }
 .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: var(--bayangan); transition: transform 0.3s; position: relative; }
 .product-card:hover {
+
+; }
+.product-card img { width: 100%; height: 250px; object-fit: cover; }
+.product-card .badge { position: absolute; top: 1rem; left: 1rem; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: white; z-index: 10; }
+.badge.laris { background: #E63946; }
+.badge.baru { background: #2E933C; }
+.badge.diskon { background: #F59E0B; }
+.product-card h3 { padding: 1rem 1rem 0.5rem; font-size: 1.1rem; color: var(--coklat-tua); }
+.product-card .desc { padding: 0 1rem; color: var(--abu); font-size: 0.9rem; }
+.product-card .price { padding: 0.5rem 1rem; font-size: 1.2rem; font-weight: 700; color: var(--coklat); }
+.product-card .price del { color: var(--coklat-abu); font-weight: 400; font-size: 0.9rem; margin-right: 0.5rem; }
+.product-card .btn-group { padding: 0 1rem 1rem; }
+.center-btn { text-align: center; margin-top: 3rem; }
+
+/* Detail Produk */
+.detail-container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.detail-img { border-radius: 12px; overflow: hidden; box-shadow: var(--bayangan-kuat); }
+.detail-img img { width: 100%; height: auto; object-fit: cover; }
+.detail-info h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--coklat-tua); }
+.detail-price { font-size: 1.5rem; font-weight: 700; color: var(--coklat); margin-bottom: 1.5rem; }
+.detail-desc { color: var(--abu); margin-bottom: 2rem; line-height: 1.8; }
+.detail-spec { margin-bottom: 2rem; }
+.detail-spec h3 { font-size: 1rem; margin-bottom: 0.8rem; color: var(--coklat-tua); }
+.detail-spec li { padding: 0.3rem 0; border-bottom: 1px dashed var(--krem-gelap); color: var(--abu); }
+
+/* Pilihan Ukuran & Warna */
+.opsi-group { margin-bottom: 1.5rem; }
+.opsi-group h3 { font-size: 1rem; margin-bottom: 0.8rem; color: var(--coklat-tua); }
+.opsi-wrapper { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.opsi-label { display: flex; align-items: center; cursor: pointer; }
+.opsi-label input { display: none; }
+.opsi-label span { padding: 0.7rem 1.2rem; border: 2px solid var(--krem-gelap); border-radius: 8px; transition: all 0.3s; font-weight: 500; }
+.opsi-label input:checked + span { border-color: var(--coklat); background: var(--krem); color: var(--coklat); font-weight: 600; }
+.opsi-label:hover span { border-color: var(--coklat-muda); }
+
+/* Jumlah */
+.qty-wrapper { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+.qty-wrapper label { font-weight: 600; color: var(--coklat-tua); }
+.qty-box { display: flex; align-items: center; border: 2px solid var(--krem-gelap); border-radius: 8px; overflow: hidden; }
+.qty-btn { width: 36px; height: 36px; border: none; background: var(--krem-gelap); cursor: pointer; font-size: 1rem; font-weight: 600; color: var(--coklat); transition: background 0.2s; }
+.qty-btn:hover { background: var(--coklat-muda); color: white; }
+.qty-box input { width: 50px; height: 36px; border: none; text-align: center; font-size: 1rem; outline: none; background: white; }
+
+/* Keranjang */
+.cart-container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+.cart-empty { text-align: center; padding: 4rem 2rem; display: none; }
+.cart-empty i { font-size: 3rem; color: var(--coklat-abu); margin-bottom: 1rem; }
+.cart-item { display: grid; grid-template-columns: 100px 1fr auto; gap: 1rem; background: white; padding: 1rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: var(--bayangan); align-items: center; }
+.cart-item img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+.cart-info h4 { margin-bottom: 0.3rem; color: var(--coklat-tua); }
+.cart-info p { font-size: 0.9rem; color: var(--abu); margin-bottom: 0.5rem; }
+.remove-btn { background: none; border: none; color: var(--merah); cursor: pointer; font-size: 1rem; padding: 0.5rem; }
+.cart-summary { background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--bayangan); margin-top: 2rem; }
+.cart-summary h3 { margin-bottom: 1.5rem; color: var(--coklat-tua); }
+.summary-row { display: flex; justify-content: space-between; padding: 0.7rem 0; border-bottom: 1px dashed var(--krem-gelap); }
+.summary-row.total { border-bottom: none; border-top: 2px solid var(--coklat); margin-top: 0.5rem; padding-top: 1rem; font-weight: 700; font-size: 1.1rem; color: var(--coklat); }
+.free-shipping { color: var(--hijau); font-weight: 600; }
+
+/* Tentang & Kontak */
+.about-container, .contact-container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+.about-text { background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--bayangan); line-height: 1.8; color: var(--abu); }
+.contact-form { background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--bayangan); }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--coklat-tua); }
+.form-group input, .form-group textarea { width: 100%; padding: 0.9rem; border: 2px solid var(--krem-gelap); border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.3s; }
+.form-group input:focus, .form-group textarea:focus { border-color: var(--coklat); }
+.contact-info { margin-top: 2rem; }
+.contact-info a { display: flex; align-items: center; gap: 0.8rem; padding: 1rem; background: white; border-radius: 8px; margin-bottom: 1rem; color: var(--coklat); font-weight: 500; transition: all 0.3s; }
+.contact-info a:hover { background: var(--krem); transform: translateX(5px); }
+
+/* Footer */
+.footer { background: var(--coklat-tua); color: white; padding: 3rem 1rem 1.5rem; margin-top: 4rem; }
+.footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.footer-logo { height: 60px; margin-bottom: 1rem; object-fit: contain; }
+.footer p { color: #E5D4C0; line-height: 1.7; }
+.footer h4 { margin-bottom: 1rem; color: #FFFAF5; font-size: 1.1rem; }
+.footer ul li { margin-bottom: 0.7rem; }
+.footer ul li a { color: #E5D4C0; transition: color 0.2s; }
+.footer ul li a:hover { color: var(--coklat-muda); }
+.sosmed { display: flex; gap: 1rem; margin-top: 1rem; }
+.sosmed a { width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s; }
+.sosmed a:hover { background: var(--coklat-muda); transform: translateY(-3px); }
+.copyright { text-align: center; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: #B8A898; font-size: 0.9rem; }
+
+/* Responsif HP */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; box-shadow: 0 10px 15px rgba(0,0,0,0.1); gap: 1rem; }
+  .nav-menu.aktif { display: flex; }
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-buttons { justify-content: center; }
+  .detail-container { grid-template-columns: 1fr; }
+  .cart-item { grid-template-columns: 80px 1fr; }
+  .remove-btn { grid-column: 2; text-align: right; }
+  .page-header h1 { font-size: 1.5rem; }
+  .section-title { font-size: 1.4rem; }
+}
