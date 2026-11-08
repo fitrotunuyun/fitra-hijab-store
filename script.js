@@ -5,20 +5,20 @@ const NOMOR_WA = '62882005944577'; // Ganti nomor kamu
 const DAFTAR_PRODUK = [
   {
     id: 1,
-    nama: 'Jilbab Instan Syari Premium',
+    nama: 'Jilbab Bergo Instan',
     harga: 65000,
     gambar: 'jilbab-syari.jpg',
-    deskripsi: 'Jilbab instan model syari bahan Ceruty Babydoll premium. Lembut, adem, tidak panas dipakai seharian. Langsung pakai tanpa perlu diatur.',
+    deskripsi: 'Jilbab instan bahan rayon premium. Lembut, adem, tidak panas dipakai seharian. Langsung pakai tanpa perlu diatur.',
     ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Susu', 'Dusty Pink', 'Mocca', 'Putih'],
-    spesifikasi: ['Bahan: Ceruty Babydoll', 'Model: Instan Syari', 'Panjang Depan: 70-85cm', 'Panjang Belakang: 110-130cm'],
+    spesifikasi: ['Bahan: Rayon', 'Model: Instan Bergo', 'Panjang Depan: 70-85cm', 'Panjang Belakang: 110-130cm'],
     label: 'Terlaris'
   },
   {
     id: 2,
-    nama: 'Pashmina Ceruty Premium',
+    nama: 'Pashmina Viscose',
     harga: 45000,
-    gambar: 'pashmina-ceruty.jpg',
+    gambar: 'pashmina-viscose.jpg',
     deskripsi: 'Pashmina bahan Ceruty Babydoll yang sangat populer. Jatuh cantik, mudah dibentuk, tepi dijahit rapi.',
     ukuran: ['M', 'L'],
     warna: ['Hitam', 'Coklat Susu', 'Dusty Pink', 'Mocca', 'Navy', 'Abu Muda'],
