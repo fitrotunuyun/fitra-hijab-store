@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk — TokoSaya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">TokoSaya</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="products.html" class="nav-link">Produk</a></li>
+        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+        <li><a href="cart.html" class="nav-link cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="count-badge">0</span>
+        </a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="detail-section">
+    <div class="detail-container">
+      <div class="detail-img">
+        <img id="prod-img" src="" alt="Foto Produk">
+      </div>
+      <div class="detail-info">
+        <h1 id="prod-name">Nama Produk</h1>
+        <p class="price" id="prod-price">Rp 0</p>
+        <p class="desc" id="prod-desc">Deskripsi produk akan muncul di sini.</p>
+        <ul class="spec-list" id="prod-spec"></ul>
+        <div class="qty-box">
+          <label>Jumlah:</label>
+          <button class="qty-btn" onclick="ubahJumlah(-1)">−</button>
+          <input type="number" id="qty" value="1" min="1">
+          <button class="qty-btn" onclick="ubahJumlah(1)">+</button>
+        </div>
+        <button class="btn btn-primary btn-lg" id="btn-add-cart">Tambah ke Keranjang</button>
+        <a href="products.html" class="btn btn-outline">Kembali ke Daftar Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h3>TokoSaya</h3><p>Belanja mudah, aman, dan nyaman.</p></div>
+      <div>
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> halo@tokosaya.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TokoSaya. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
