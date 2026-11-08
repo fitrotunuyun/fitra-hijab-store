@@ -20,6 +20,7 @@ const DAFTAR_PRODUK = [
     harga: 45000,
     gambar: "pashmina-viscose.png",
     deskripsi: 'bahan viscose premium, karteristik bahannya lembut dan mudah di bentuk, finishing tepi double jahit .',
+    ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Susu', 'Dusty Pink', 'Mocca', 'Navy', 'Abu Muda'],
     spesifikasi: ['Bahan: Viscose Premium', 'Ukuran: 170cm x 70cm', 'Tepi Jahit Rapi'],
     label: 'Baru'
@@ -30,6 +31,7 @@ const DAFTAR_PRODUK = [
     harga: 15000,
     gambar: "segiempat.jpg",
     deskripsi: 'KERUDUNG SEGI EMPAT PARIS POLOS VARISHA NECI 2 SISI. Berbahan dasar katun paris dengan tekstur halus dan lembut sehingga nyaman digunakan sehari-hari. Permukaannya yang sedikit mengkilap membuat hijab terlihat lebih menarik .',
+    ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Coklat Tua', 'Mocca', 'Maroon', 'Ivory', 'Navy', 'Putih'],
     spesifikasi: ['Bahan: 'Katun Paris', 'Ukuran: 110-110cm'],
     label: 'Diskon'
@@ -38,8 +40,9 @@ const DAFTAR_PRODUK = [
     id: 4,
     nama: '',
     harga: 37000,
-    gambar: "motif.png",
+    gambar: "",
     deskripsi: 'Jilbab segi empat bahan voal premium. Bahan adem, mudah digunakan, mudah dibentuk.',
+    ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Putih', 'Dusty Pink', 'Biru Langit', 'Coklat Susu'],
     spesifikasi: ['Bahan: Voal Premium'],
     label: 'Terlaris'
@@ -50,6 +53,7 @@ const DAFTAR_PRODUK = [
     harga: 37000,
     gambar: "motif.png",
     deskripsi: 'Jilbab segi empat bahan voal premium. Bahan adem, mudah digunakan, mudah dibentuk.',
+    ukuran: ['S', 'M', 'L'],
     warna: ['Hitam', 'Putih', 'Dusty Pink', 'Biru Langit', 'Coklat Susu'],
     spesifikasi: ['Bahan: Voal Premium'],
     label: 'Baru'
