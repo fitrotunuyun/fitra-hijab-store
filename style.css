@@ -84,7 +84,7 @@ img { max-width: 100%; height: auto; display: block; }
 .center-btn { text-align: center; margin-top: 3rem; }
 
 /* Detail Produk */
-.detail-container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.detail-container { max-width: 100px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .detail-img { border-radius: 12px; overflow: hidden; box-shadow: var(--bayangan-kuat); }
 .detail-img img { width: 100%; height: auto; object-fit: cover; }
 .detail-info h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--coklat-tua); }
