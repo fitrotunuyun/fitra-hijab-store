@@ -18,7 +18,7 @@ const DAFTAR_PRODUK = [
     id: 2,
     nama: 'Pashmina Viscose',
     harga: 45000,
-    gambar: "pashmina viscose.png",
+    gambar: "pashmina-viscose.png",
     deskripsi: 'bahan viscose premium, karteristik bahannya lembut dan mudah di bentuk, finishing tepi double jahit .',
     warna: ['Hitam', 'Coklat Susu', 'Dusty Pink', 'Mocca', 'Navy', 'Abu Muda'],
     spesifikasi: ['Bahan: Viscose Premium', 'Ukuran: 170cm x 70cm', 'Tepi Jahit Rapi'],
